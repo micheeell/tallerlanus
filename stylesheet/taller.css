@@ -10,7 +10,7 @@
 
 .jumbotron.portada {
     background-color: #f41411;
-    color: #fff172;
+    color: #fff777;
     padding: 100px 25px;
 }
 .jumbotron.portada h1 {
@@ -70,7 +70,7 @@
     font-style: normal;
 }
 
-#promociones {
+#ofertas {
     display: none;
 }
 .panel {
@@ -109,7 +109,7 @@
 .panel-footer .btn {
     margin: 15px 0;
     background-color: #f41511;
-    color: #fff;
+    color: #fff17;
 }
 
 nav.navbar {
@@ -123,19 +123,19 @@ nav.navbar {
     border-radius: 0;
 }
 .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
+    color: #fff777 !important;
 }
 .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #f41511 !important;
-    background-color: #fff !important;
+    background-color: #fff777 !important;
 }
 .navbar-default .navbar-toggle {
     border-color: transparent;
-    color: #fff !important;
+    color: #fff777 !important;
 }
 
 footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
-    color: #f4511e;
+    color: #f41511;
 }
