@@ -145,3 +145,6 @@ footer .glyphicon {
   margin-bottom: 20px;
   color: #f41511;
 }
+input[name="_gotcha"] {
+  display: none;
+}
