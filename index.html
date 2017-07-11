@@ -54,9 +54,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Jacques Francois Shadow" rel="stylesheet" />
   <!-- link href='https://fonts.googleapis.com/css?family=Fredericka the Great' rel='stylesheet' -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/css/swipebox.min.css" integrity="sha256-5KRlt3ls3xVyu0Fv7M6hvDH0wCDqHraymjiBtOAhZZU=" crossorigin="anonymous" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/js/jquery.swipebox.js" integrity="sha256-vKXD/UmP9xStmhsNp5idfftH+GA11cpT2OSzfIV+b0o=" crossorigin="anonymous"></script>
 </head>
 
 <body id="miTaller" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -198,21 +200,27 @@
   <div class="row text-center">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="images/volante_bn_audi.jpg" alt="Mantenimiento">
+        <a href="images/volante_bn_audi.jpg" rel="portfolio" title="Mantenimiento" class="swipebox">
+          <img src="images/volante_bn_audi.jpg" alt="Mantenimiento" class="img-fluid">
+        </a>
         <p><strong>Mantenimiento</strong></p>
         <p>Revisamos, controlamos, limpiamos, remplazamos las piezas de tu auto.</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="images/volante_mini.jpg" alt="Performance">
+        <a href="images/volante_mini.jpg" rel="portfolio" title="Performance" class="swipebox">
+          <img src="images/volante_mini.jpg" alt="Performance" class="img-fluid">
+        </a>
         <p><strong>Performance</strong></p>
         <p>Mejoramos tu autom&oacute;vil para que tu experiencia sea m&aacute;s segura, m&aacute;s completa.</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="images/volante_bn_mercedes.jpg" alt="Reparaciones">
+        <a href="images/volante_bn_mercedes.jpg" rel="portfolio" title="Reparaciones" class="swipebox">
+          <img src="images/volante_bn_mercedes.jpg" alt="Reparaciones" class="img-fluid">
+        </a>
         <p><strong>Reparaciones</strong></p>
         <p>Arreglamos tu auto.</p>
       </div>
@@ -362,6 +370,25 @@
   </div>
 </div>
 
+<script type="text/javascript">
+//<![CDATA[
+;(function($) {
+  $('.swipebox').swipebox({
+    //useCSS : true,
+    //useSVG : true,
+    //initialIndexOnArray : 0,
+    //hideCloseButtonOnMobile : false,
+    //videoMaxWidth : 1140,
+    //beforeOpen: function() {},
+    //afterOpen: function() {},
+    //afterClose: function() {},
+    //loopAtEnd: false,
+    removeBarsOnMobile : false,
+    hideBarsDelay : 16384
+  });
+})(jQuery);
+//]]>
+</script>
 <footer class="container-fluid text-center">
   <a href="#miTaller" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
