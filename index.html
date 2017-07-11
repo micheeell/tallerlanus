@@ -54,9 +54,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Jacques Francois Shadow" rel="stylesheet" />
   <!-- link href='https://fonts.googleapis.com/css?family=Fredericka the Great' rel='stylesheet' -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.css" integrity="sha256-8aNQFtmxcOMVoOhLD4mrHqaKC2Ui++LmlQsoKTqxwIE=" crossorigin="anonymous" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.js" integrity="sha256-JRmDZdHmGahZjoYtQActan4Leibhl+7jZOETtJT3DCY=" crossorigin="anonymous"></script>
 </head>
 
 <body id="miTaller" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -198,21 +200,27 @@
   <div class="row text-center">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="images/volante_bn_audi.jpg" alt="Mantenimiento">
+        <a href="images/volante_bn_audi.jpg" data-toggle="lightbox" data-gallery="galeria" data-type="image" data-title="Mantenimiento">
+          <img src="images/volante_bn_audi.jpg" alt="Mantenimiento" class="img-fluid">
+        </a>
         <p><strong>Mantenimiento</strong></p>
         <p>Revisamos, controlamos, limpiamos, remplazamos las piezas de tu auto.</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="images/volante_mini.jpg" alt="Performance">
+        <a href="images/volante_mini.jpg" data-toggle="lightbox" data-gallery="galeria" data-type="image" data-title="Performance">
+          <img src="images/volante_mini.jpg" alt="Performance" class="img-fluid">
+        </a>
         <p><strong>Performance</strong></p>
         <p>Mejoramos tu autom&oacute;vil para que tu experiencia sea m&aacute;s segura, m&aacute;s completa.</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="images/volante_bn_mercedes.jpg" alt="Reparaciones">
+        <a href="images/volante_bn_mercedes.jpg" data-toggle="lightbox" data-gallery="galeria" data-type="image" data-title="Reparaciones">
+          <img src="images/volante_bn_mercedes.jpg" alt="Reparaciones" class="img-fluid">
+        </a>
         <p><strong>Reparaciones</strong></p>
         <p>Arreglamos tu auto.</p>
       </div>
@@ -361,6 +369,16 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">
+//<![CDATA[
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox({
+        alwaysShowClose: true
+    });
+});
+//]]>
+</script>
 
 <footer class="container-fluid text-center">
   <a href="#miTaller" title="To Top">
