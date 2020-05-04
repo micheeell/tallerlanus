@@ -158,6 +158,11 @@ input[name="_gotcha"] {
   text-align: center;
   width: 100%;
 }
+.section-title p {
+  text-align: left;
+  line-height: normal;
+  padding: 12px 0;
+}
 .title-row {
   margin-bottom: 16px;
 }
