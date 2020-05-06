@@ -169,3 +169,12 @@ input[name="_gotcha"] {
 .sticker {
   height: 400px;
 }
+#myNavbar li a,
+div.container-fluid h2,
+div.container-fluid div.row h4 {
+  text-transform: capitalize;
+}
+#ventajas div.row h4,
+#contacto h2 {
+  text-transform: uppercase;
+}
