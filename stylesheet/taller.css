@@ -178,3 +178,6 @@ div.container-fluid div.row h4 {
 #contacto h2 {
   text-transform: uppercase;
 }
+#nosotros p {
+  text-align: justify;
+}
